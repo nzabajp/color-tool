@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Comfortaa', cursive;;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    text-align: center;
+}
+.container {
+    padding: 10px
+}
+.title{
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+}
+label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+input {
+    margin-bottom: 25px;
+}
+[type="text"] {
+    padding: 5px 10px; /*if 2 inputs then 1st is vertical and 2nd is horizontal*/
+    border-radius: 3px;
+    border: none;
+}
+.box {
+    background-color: grey;
+    height: 100px;
+    width: 100%;
+}
+p {
+    margin: 10px 0px 10px 0px;
+}
+.toggle {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.toggle-btn {
+    width: 40px;
+    height: 21px;
+    border-radius: 50px;
+    margin: 0px 15px;
+    background-color: grey;
+}
+.inner-circle {
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    margin: 3px;
+    background-color: white;
+    transition: all 250ms;
+}
+
+.toggle-btn.toggled > .inner-circle {
+    transform: translateX(18px);
+    background-color: #333;
+}
+
+.unselected {
+    opacity: 0.25;
+}
