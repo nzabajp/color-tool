@@ -1,1 +1,1 @@
-# color-tool
+# js-color-tool
